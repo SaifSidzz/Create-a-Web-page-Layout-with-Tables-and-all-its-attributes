@@ -1,0 +1,169 @@
+<!-- 3. Create a Web page Layout with Tables and all its attributes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Page with Table Layout</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f9;
+}
+header {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 20px;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 20px 0;
+}
+  th, td {
+padding: 12px;
+text-align: left;
+border: 1px solid #ddd;
+}
+th {
+background-color: #f2f2f2;
+color: #333;
+}
+tr:nth-child(even) {
+background-color: #f9f9f9;
+}
+tr:hover {
+background-color: #f1f1f1;
+}
+caption {
+font-size: 1.5em;
+margin-bottom: 10px;
+}
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 10px;
+position: fixed;
+width: 100%;
+  bottom: 0;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Web Page Layout with Tables</h1>
+</header>
+<div class="content">
+<h2>Table Example: Employee Details</h2>
+<!-- Table with headers, rows, and columns -->
+<table>
+<caption>Employee Information</caption>
+<thead>
+<tr>
+<th>Employee ID</th>
+<th>Full Name</th>
+<th>Department</th>
+<th>Salary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>101</td>
+<td>John Doe</td>
+<td>Engineering</td>
+  <td>$80,000</td>
+</tr>
+<tr>
+<td>102</td>
+<td>Jane Smith</td>
+<td>Marketing</td>
+<td>$75,000</td>
+</tr>
+<tr>
+<td>103</td>
+<td>Samuel Green</td>
+<td>HR</td>
+<td>$60,000</td>
+</tr>
+<tr>
+<td>104</td>
+<td>Emma Brown</td>
+<td>Finance</td>
+<td>$90,000</td>
+</tr>
+</tbody>
+</table>
+<h2>Table with Colspan and Rowspan</h2>
+<!-- Table with colspan and rowspan -->
+<table>
+<caption>Project Timeline</caption>
+  <thead>
+<tr>
+<th>Task</th>
+<th>Start Date</th>
+<th>End Date</th>
+<th>Assigned To</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Phase 1</td>
+<td>01/05/2025</td>
+<td>01/10/2025</td>
+<td>John Doe</td>
+</tr>
+<tr>
+<td>01/11/2025</td>
+<td>01/15/2025</td>
+<td>Jane Smith</td>
+</tr>
+<tr>
+<td colspan="3">Final Review</td>
+<td>Emma Brown</td>
+</tr>
+</tbody>
+</table>
+  <h2>Table with Table Header and Footer</h2>
+<!-- Table with header and footer -->
+<table>
+<thead>
+<tr>
+<th>Product Name</th>
+<th>Price</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Product A</td>
+<td>$50</td>
+<td>120</td>
+</tr>
+<tr>
+<td>Product B</td>
+<td>$30</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Product C</td>
+<td>$40</td>
+<td>150</td>
+</tr>
+  </tbody>
+<tfoot>
+<tr>
+<td colspan="3">Total Products: 3</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<footer>
+<p>&copy; 2025 My Company. All rights reserved.</p>
+</footer>
+</body>
+</html>
